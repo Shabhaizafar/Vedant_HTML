@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Form with Table</title>
+</head>
+<body bgcolor="brown" text="white">
+
+  <form>
+    <table align="center">
+      <tr>
+        <th colspan="2">User Information Form</th>
+      </tr>
+      <tr>
+        <td>Name:</td>
+        <td><input type="text" name="name"></td>
+      </tr>
+      <tr>
+        <td>Email:</td>
+        <td><input type="email" name="email"></td>
+      </tr>
+      <tr>
+        <td>Password:</td>
+        <td><input type="password" name="password"></td>
+      </tr>
+      <tr>
+        <td>Gender:</td>
+        <td>
+          <input type="radio" name="gender" value="male"> Male
+          <input type="radio" name="gender" value="female"> Female
+        </td>
+      </tr>
+      <tr>
+        <td>Skills:</td>
+        <td>
+          <input type="checkbox" name="skills" value="html"> HTML
+          <input type="checkbox" name="skills" value="css"> CSS
+          <input type="checkbox" name="skills" value="js"> JavaScript
+        </td>
+      </tr>
+      <tr>
+        <td>Favorite Color:</td>
+        <td><input type="color" name="color"></td>
+      </tr>
+      <tr>
+        <td>Date of Birth:</td>
+        <td><input type="date" name="dob"></td>
+      </tr>
+      <tr>
+        <td>Date & Time:</td>
+        <td><input type="datetime-local" name="datetime"></td>
+      </tr>
+      <tr>
+        <td>Preferred Time:</td>
+        <td><input type="time" name="time"></td>
+      </tr>
+      <tr>
+        <td>Preferred Week:</td>
+        <td><input type="week" name="week"></td>
+      </tr>
+      <tr>
+        <td>Preferred Month:</td>
+        <td><input type="month" name="month"></td>
+      </tr>
+      <tr>
+        <td>Upload Resume:</td>
+        <td><input type="file" name="resume"></td>
+      </tr>
+      <tr>
+        <td>Experience Level:</td>
+        <td>
+          <select name="experience">
+            <option value="">--Select--</option>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="expert">Expert</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Skill Meter:</td>
+        <td><meter min="0" max="100" value="75">75%</meter></td>
+      </tr>
+      <tr>
+        <td>Task Progress:</td>
+        <td><progress value="40" max="100">40%</progress></td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input type="submit" value="Submit">
+          <input type="reset" value="Reset">
+        </td>
+      </tr>
+    </table>
+  </form>
+
+</body>
+</html>

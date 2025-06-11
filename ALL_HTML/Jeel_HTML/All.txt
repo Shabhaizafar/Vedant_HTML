@@ -1,0 +1,261 @@
+-- Create Employees table
+CREATE TABLE Employees (
+    emp_id INT PRIMARY KEY,
+    name VARCHAR(100),
+    department_id INT,
+    salary DECIMAL(10, 2),
+    joining_date DATE
+);
+
+-- Create Departments table
+CREATE TABLE Departments (
+    department_id INT PRIMARY KEY,
+    department_name VARCHAR(100)
+);
+
+-- Create Attendance table
+CREATE TABLE Attendance (
+    emp_id INT,
+    attendance_date DATE,
+    status VARCHAR(10)
+);
+
+INSERT INTO Departments (department_id, department_name) VALUES
+(1, 'HR'),
+(2, 'IT'),
+(3, 'Finance'),
+(4, 'Marketing'),
+(5, 'Sales'),
+(6, 'Admin'),
+(7, 'Logistics'),
+(8, 'Legal'),
+(9, 'Support'),
+(10, 'Operations'),
+(11, 'Research'),
+(12, 'Design'),
+(13, 'QA'),
+(14, 'Procurement'),
+(15, 'Production'),
+(16, 'Security'),
+(17, 'Engineering'),
+(18, 'Medical'),
+(19, 'Customer Service'),
+(20, 'Training');
+
+INSERT INTO Employees (emp_id, name, department_id, salary, joining_date) VALUES
+(101, 'Alice', 1, 5000, '2021-01-15'),
+(102, 'Bob', 2, 7000, '2020-03-20'),
+(103, 'Charlie', 3, 6000, '2022-07-10'),
+(104, 'Diana', 4, 5500, '2019-11-01'),
+(105, 'Ethan', 5, 4500, '2023-05-14'),
+(106, 'Fiona', 6, 6200, '2018-08-21'),
+(107, 'George', 7, 7500, '2021-06-30'),
+(108, 'Hannah', 8, 5300, '2020-12-25'),
+(109, 'Ivan', 9, 4800, '2022-03-17'),
+(110, 'Jane', 10, 5900, '2019-09-09'),
+(111, 'Kyle', 11, 8000, '2021-10-12'),
+(112, 'Laura', 12, 4700, '2020-04-04'),
+(113, 'Mike', 13, 5200, '2023-02-28'),
+(114, 'Nina', 14, 6700, '2018-01-01'),
+(115, 'Oscar', 15, 4300, '2022-06-06'),
+(116, 'Paula', 16, 6900, '2021-08-18'),
+(117, 'Quinn', 17, 5600, '2020-02-29'),
+(118, 'Rachel', 18, 7100, '2019-03-03'),
+(119, 'Steve', 19, 6400, '2022-10-22'),
+(120, 'Tina', 20, 4600, '2023-01-01');
+
+
+INSERT INTO Attendance (emp_id, attendance_date, status) VALUES
+(101, '2025-05-01', 'Present'),
+(102, '2025-05-01', 'Present'),
+(103, '2025-05-01', 'Absent'),
+(104, '2025-05-01', 'Present'),
+(105, '2025-05-01', 'Present'),
+(106, '2025-05-01', 'Absent'),
+(107, '2025-05-01', 'Present'),
+(108, '2025-05-01', 'Absent'),
+(109, '2025-05-01', 'Present'),
+(110, '2025-05-01', 'Present'),
+(111, '2025-05-01', 'Absent'),
+(112, '2025-05-01', 'Present'),
+(113, '2025-05-01', 'Absent'),
+(114, '2025-05-01', 'Present'),
+(115, '2025-05-01', 'Present'),
+(116, '2025-05-01', 'Present'),
+(117, '2025-05-01', 'Absent'),
+(118, '2025-05-01', 'Present'),
+(119, '2025-05-01', 'Present'),
+(120, '2025-05-01', 'Absent');
+
+
+
+
+-- //////////////////////////////////
+
+---
+
+## 🟢 1. **SELECT Statement (10 Questions)**
+
+1. Select all columns from the Employees table.
+2. Select only the `name` and `salary` columns from Employees.
+3. Select distinct department IDs from Employees.
+4. Select the current date using SQL.
+5. Select the first 5 employee names.
+6. Select employee names in lowercase.
+7. Select the length of each employee name.
+8. Select employees with a calculated yearly salary.
+9. Select the name of employees with alias as “Employee Name”.
+10. Select all columns from Departments table.
+
+---
+
+## 🔵 2. **WHERE Clause (10 Questions)**
+
+1. Select employees where salary is greater than 6000.
+2. Select employees who joined after 2020.
+3. Select departments with `department_id` less than 10.
+4. Select employees where name starts with 'A'.
+5. Select employees with salary not equal to 5000.
+6. Select employees from department\_id 3.
+7. Select employees with a name containing 'an'.
+8. Select attendance where status is 'Absent'.
+9. Select employees where salary is less than 4500.
+10. Select employees who joined in 2021.
+
+---
+
+## 🔻 3. **LIMIT (10 Questions)**
+
+1. Select first 3 employees.
+2. Select top 5 highest salaries (with `ORDER BY`).
+3. Select 10 departments only.
+4. Select any 2 attendance records.
+5. Select 5 employee names only.
+6. Select the 2 most recent joiners.
+7. Select the first 5 departments alphabetically.
+8. Select any 4 employees with salary > 5000.
+9. Select the last 2 attendance entries using `ORDER BY`.
+10. Select 1 employee per department (with subquery).
+
+---
+
+## 🟡 4. **Comparison Operators (10 Questions)**
+
+1. Select employees with salary = 6000.
+2. Select employees with salary <> 7000.
+3. Select employees with salary >= 6500.
+4. Select employees who joined on '2021-10-12'.
+5. Select departments where `department_id` = 1.
+6. Select attendance where status != 'Present'.
+7. Select employees with salary < 5000.
+8. Select employees with salary <= 5500.
+9. Select employees where emp\_id = 105.
+10. Select employees who joined before 2022.
+
+---
+
+## 🔴 5. **Logical Operators (AND, OR, NOT) (10 Questions)**
+
+1. Select employees with salary > 5000 AND department\_id = 2.
+2. Select employees with salary < 5000 OR department\_id = 3.
+3. Select employees NOT in department 5.
+4. Select employees where name starts with 'J' OR ends with 'e'.
+5. Select employees with salary > 4000 AND salary < 6000.
+6. Select attendance where status = 'Absent' OR emp\_id = 101.
+7. Select employees with department\_id = 1 AND salary >= 5000.
+8. Select employees with salary > 6000 OR joining date < '2020-01-01'.
+9. Select employees where name NOT LIKE 'A%'.
+10. Select employees NOT in department 10.
+
+---
+
+## 🟠 6. **BETWEEN (10 Questions)**
+
+1. Select employees with salary BETWEEN 5000 AND 7000.
+2. Select employees who joined BETWEEN '2020-01-01' AND '2022-01-01'.
+3. Select departments with ID BETWEEN 5 AND 15.
+4. Select employees with emp\_id BETWEEN 110 AND 120.
+5. Select attendance for emp\_id BETWEEN 101 AND 105.
+6. Select employees with salary NOT BETWEEN 6000 AND 7000.
+7. Select employees who joined BETWEEN two dates using variables.
+8. Select employees with name length BETWEEN 4 AND 6.
+9. Select salaries BETWEEN 4000 AND 5000.
+10. Select employees with salary BETWEEN 3000 AND 10000 AND department\_id BETWEEN 1 AND 5.
+
+---
+
+## 🟣 7. **ORDER BY (10 Questions)**
+
+1. Select employees ordered by salary ascending.
+2. Select employees ordered by name descending.
+3. Select top 5 highest-paid employees.
+4. Select employees ordered by joining date ascending.
+5. Select departments ordered alphabetically.
+6. Select attendance ordered by status then emp\_id.
+7. Select employees ordered by department\_id and then salary.
+8. Select employees ordered by name length.
+9. Select salaries in descending order.
+10. Select employees and order by department\_id descending.
+
+---
+
+## 🔵 8. **Aggregate Functions: COUNT, SUM, AVG, MIN, MAX (10 Questions)**
+
+1. Count total employees.
+2. Find sum of all employee salaries.
+3. Calculate average salary.
+4. Find maximum salary.
+5. Find minimum salary.
+6. Count employees in department 2.
+7. Sum salary of employees who joined in 2021.
+8. Avg salary for those earning above 6000.
+9. Count of present vs absent in Attendance.
+10. Max salary in department 3.
+
+---
+
+## 🟢 9. **GROUP BY + HAVING (10 Questions)**
+
+1. Group employees by department and count them.
+2. Group employees by department and show average salary.
+3. Group attendance by status and count.
+4. Show departments with more than 2 employees.
+5. Show departments where avg salary > 6000.
+6. Group by joining year and count employees.
+7. Show total salary by department.
+8. Group employees by department and filter having sum(salary) > 20000.
+9. Group by status and show counts only if > 5.
+10. Group by department and show min, max salaries.
+
+---
+
+## 🔴 10. **Joins: INNER, LEFT, RIGHT, FULL, EXCLUSIVE (10 Questions)**
+
+### 🟡 INNER JOIN (2 Questions)
+
+1. List employees with their department names.
+2. Show employees and their department name where salary > 5000.
+
+### 🟠 LEFT JOIN (2 Questions)
+
+3. List all employees and their department info (even if department missing).
+4. List employees and their attendance records if available.
+
+### 🔵 RIGHT JOIN (2 Questions)
+
+5. List all departments and any assigned employees.
+6. Show departments even if no employee is in them.
+
+### 🔴 FULL JOIN (2 Questions) *(PostgreSQL or SQL Server)*
+
+7. List all employees and departments, even if unmatched.
+8. List all employees and departments with NULLs where no match.
+
+### 🟣 LEFT EXCLUSIVE JOIN (1 Question)
+
+9. Show employees with no department assigned (assuming department\_id not found).
+
+### 🟢 RIGHT EXCLUSIVE JOIN (1 Question)
+
+10. Show departments with no employees.
+

@@ -1,0 +1,88 @@
+=> Web Development :-
+-> Website/WebApp.
+
+--> Basic : 
+	1. HTML (Hyper Text makup Language)  
+		- Create a Structure of Webpage/Website.
+			webpage : single HTML File
+			website : collection of Multiple Webpages/HTML Files.
+
+	2. CSS  (Cascading Style Sheet)
+		- design a Strcture 
+
+	3. JS   (JavaScript)
+		- functionality.
+=============================================================
+=> Job  : 
+	1. Front-end Developer : 
+		- HTML,CSS,JS,ReactJs,Bootstrap,Tailwind CSS ..etc
+
+	2. Back-end Developer :
+		- Java,Python,CPP,NodeJS...etc
+
+	3. Full-stack Developer : 
+		- Frond-end + Back-end + DB(Database)
+
+	4. MERN-Stack Developer :
+		M : MongoDB
+		E : ExpressJS
+		R : ReactJs
+		N : NodeJs
+
+	5. MEAN-Stack Developer : 
+		M : MongoDB
+		E : ExpressJS
+		A : AngularJs
+		N : NodeJs
+
+	6. SoftWare Engineer :  
+		
+	7. Java/Python/Web Developer :
+
+====================================================================
+=> What is HTML ? 
+-> HTML stands for Hyper Text makup Language.
+	1. Hyper Text  : 
+		Hyper :  Hype (Link) (depands on Text)
+		Text : 	Content (texture,image,video,  ..etc)
+	2. Makup Language : 
+		Text-encoding System.
+
+=> Use: 
+- Create a Structure of Webpage/Website.
+
+=> HTML is a Programming Language or Not ? 
+-> No, it's a Markup Language.
+
+=> Extansion :  
+	1. .html(New)
+	2. .htm (Old)
+=======================================================================
+=> Version of HTML : 
+-> 
+	HTML 1.0   --> 1991
+	     1.1
+
+	HTML 2.0  --> 1995
+	     2.2...
+
+	HTML 3.0  --> Jan,1997
+	
+	HTML 4.0  --> Dec,1997
+  		  --> 2000
+		 
+	HTML 5.0  --> 2014
+	     5.2  --> 2017 
+
+===========================================================================
+=> Founder/Developer/CEO/Father of HTML :   Tim Berner's Lee.
+===========================================================================
+HTML : Not shwing an Error
+
+if you want to find an error  : https://validator.w3.org/
+===========================================================================
+
+HTML : case insensetive 
+====================================================
+Language ISO Code : https://www.w3schools.com/tags/ref_language_codes.asp
+====================================================
